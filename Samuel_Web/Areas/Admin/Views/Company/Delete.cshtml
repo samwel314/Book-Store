@@ -1,0 +1,67 @@
+﻿@model Company
+
+<div class="card shadow border-0 mt-4">
+
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2"> Delete @Model.Name Company !</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form method="post" asp-action="Delete" >
+            <div class="border p-3 mt-3 row">
+         
+                <div class="form-floating  py-2 col-6">
+                    <input disabled asp-for="Name" class="form-control border-0 shadow " />
+                    <label asp-for="Name" class="ms-2"> </label>
+                    <span asp-validation-for="Name" class="text-danger fw-bold"></span>
+                </div>
+                <div class="form-floating  py-2 col-6 ">
+                    <input disabled asp-for="PhoneNumber" class="form-control border-0 shadow " />
+                    <label asp-for="PhoneNumber" class="ms-2">Phone Number </label>
+                </div>
+                <div class="form-floating  py-2 col-6 ">
+                    <input disabled asp-for="StreetAddress" class="form-control border-0 shadow " />
+                    <label asp-for="StreetAddress" class="ms-2">Street Address  </label>
+                </div>
+                <div class="form-floating  py-2 col-6 ">
+                    <input disabled asp-for="State" class="form-control border-0 shadow " />
+                    <label asp-for="State" class="ms-2">State </label>
+                </div>
+                <div class="form-floating  py-2 col-6 ">
+                    <input disabled asp-for="PostalCode" class="form-control border-0 shadow " />
+                    <label asp-for="PostalCode" class="ms-2">Postal Code </label>
+                </div>
+                <div class="form-floating  py-2 col-6 ">
+                    <input disabled asp-for="City" class="form-control border-0 shadow " />
+                    <label asp-for="City" class="ms-2">City </label>
+                </div>
+
+
+
+
+
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <button type="submit" class="btn btn-danger  form-control">Delete </button>
+
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a asp-controller="Company" asp-action="Index" class="btn btn-outline-secondary border form-control">Back To List</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

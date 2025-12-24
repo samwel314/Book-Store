@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Samuel_Web.DataAccess/Samuel_Web.DataAccess.csproj" Id="00c38e9e-8209-4c67-b4a1-929b2d2e4d2d" />
+  <Project Path="Samuel_Web.Models/Samuel_Web.Models.csproj" Id="adef951c-7fce-4262-bb42-4a2b2768aed2" />
+  <Project Path="Samuel_Web.Utility/Samuel_Web.Utility.csproj" Id="fd941e5b-76d4-4c65-b2f1-85248410bcc2" />
+  <Project Path="Samuel_Web/Samuel_Web.csproj" />
+</Solution>

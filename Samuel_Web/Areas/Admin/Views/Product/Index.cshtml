@@ -1,0 +1,51 @@
+﻿@model List<Product>
+@* 
+<!-- i used partial any view need message will use this code  -->
+and move it to layout page so all views can use it
+<partial name="_Message" />
+ *@
+
+<div class="card shadow border-0 mt-4">
+
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2"> Product List</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+
+        <div class="row  pb-3">
+            <div class="col-6">
+            </div>
+            <div class="col-6 text-end">
+                <a asp-area="Admin" asp-controller="Product" asp-action="Upsert" class="btn btn-primary">
+                    <i class="bi bi-file-plus-fill"></i>   Create New Product
+                </a>
+            </div>
+        </div>
+
+        <table id="tbldata" class="table  table-bordered table-striped ">
+            <thead>
+                <tr>
+                    <th> Title  </th>
+                    <th>ISBN  </th>
+                    <th> Price </th>
+
+                    <th>Author  </th>
+
+                    <th>Category </th>
+        
+          
+                    <th></th>
+                </tr>
+            </thead>
+          
+
+        </table>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ <script src="~/js/Product.js"></script>
